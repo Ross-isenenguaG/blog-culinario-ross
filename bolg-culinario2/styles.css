@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: #51a614;
+  color: #ffffff;
+  padding: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+
+}
+header .container {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header .logo h1 {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+}
+.logo-principal {
+  width: 120px;
+  height: auto;
+  max-width: 30vw;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.nav-menu ul li a {
+  display: block;
+  padding: 0.6rem 1rem;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: transform 0.25s ease, background-color 0.25s ease,
+    color 0.25s ease;
+}
+.nav-menu ul li a:hover {
+  transform: translateY(-6px);
+  background-color: #3a8207;
+}
+
+main {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.hero {
+  width: 90%;
+  max-width: 900px;
+  margin: 2rem auto;
+  background-color: #84e43f92;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.recipe-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+section {
+  width: 100%;
+  gap: 1rem;
+}
+section h2 {
+  color: #059e12;
+  margin-bottom: 1rem;
+}
+.receta {
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: "Segoe UI", Arial, sans-serif;
+  text-align: justify;
+  gap: 1rem;
+  width: 90%;
+  max-width: 900px;
+  height: auto; 
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.receta h2,
+.receta h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.receta-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+.ingredientes ul {
+  list-style: square;
+  padding-left: 1.2rem;
+}
+.preparacion ol {
+  padding-left: 1.2rem;
+  columns: 2;
+  column-gap: 2rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.footerr {
+  background: #51a614;
+  min-height: 18vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+aside {
+  margin: 3rem auto;
+  padding: 2rem;
+  max-width: 900px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  line-height: 1.6;
+}
+
+aside h2 {
+  color: #51A614;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+aside p {
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+aside img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-top: 1rem;
+}
+aside img:hover {
+  transform: scale(1.05);
+}
+
+.social-icon{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin: 10px 5px;
+      flex-wrap: wrap;
+    }
+    .icon-element{
+      list-style: none;
+    }
+    .icon{
+      color: white;
+      font-size: 32px;
+      display: inline-block;
+      margin: 0 10px;
+      transition: 0.5s;
+    }
+    .icon:hover{
+      transform: translateY(-10px);
+    }
+.text {
+  margin-top: 10px;
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.categories {
+  padding: 3rem 1rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+.categories h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  margin-bottom: 2rem;
+  color: #333;
+}
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: stretch;
+}
+.category-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+.category-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.category-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.3rem;
+  color: #51a614;
+}
+.category-card p {
+  color: #555;
+  font-size: 0.95rem;
+}
+[data-theme="light"]{
+    --primary: #51a614;
+    --background: #ffffff;
+    --text: #000;
+}
+[data-theme="dark"]{
+    --primary: #51a614;
+    --background: #485B4A;
+    --text: #ffffff;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden; 
+  color: var(--text);
+  background: var(--background);
+}
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+
+}
+.slider:before{
+position: absolute;
+content: "";
+height: 26px;
+width: 26px;
+left: 4px;
+bottom: 4px;
+background-color: var(--primary);
+-webkit-transition: .4s;
+transition: .4s;
+border-radius: 50%;
+}
+input:checked + .slider{
+    background-color: var(--background);
+}
+input:checked + .slider:before{
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+@media screen and (max-width: 1024px) {
+  .recipe-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .receta-grid {
+    grid-template-columns: 1fr;
+  }
+  .preparacion ol {
+    columns: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .recipe-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  .hero {
+    width: 95%;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header .container {
+    text-align: center;
+  }
+  .logo-principal {
+    width: 80px;
+  }
+  .receta {
+    width: 95%;
+    padding: 1rem;
+  }
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+  .nav-menu ul li a {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}

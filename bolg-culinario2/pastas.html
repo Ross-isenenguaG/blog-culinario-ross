@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pastas — Mi Blog Culinario</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles-recetas.css">
+  <script src="script.js" type="text/javascript" defer></script>
+</head>
+<body>
+  <header>
+    <label class="switch">
+      <input type="checkbox" id="slider" checked>
+      <span class="slider"></span>
+    </label>
+    <div class="container">
+      <div class="logo">
+        <img src="logo-blog-culinario-rem.png" alt="Logo" class="logo-principal">
+        <h1>Mi Blog Culinario 2.0</h1>
+      </div>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="pastas.html" class="menu">Pastas</a></li>
+          <li><a href="ensaladas.html" class="menu">Ensaladas</a></li>
+          <li><a href="postres.html" class="menu">Postres</a></li>
+          <li><a href="vegetariano.html" class="menu">Vegetariano</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Pastas fáciles y rápidas</h1>
+        <p>15 recetas sencillas para preparar ricos platos de pasta en casa.</p>
+      </div>
+    </section>
+
+    <div class="recipes-wrapper">
+      <a class="back-home" href="index.html">← Volver al inicio</a>
+      <div class="recipes-grid">
+        <article class="receta">
+          <img src="imagenes/pasta1.jpg" alt="Spaghetti al pomodoro">
+          <div class="card-body">
+            <h3>Spaghetti al Pomodoro</h3>
+            <p class="meta">Tiempo: 20 min • Dificultad: Fácil</p>
+            <div class="ingredientes">
+              <strong>Ingredientes:</strong>
+              <ul>
+                <li>200 g spaghetti</li>
+                <li>300 g tomates triturados</li>
+                <li>2 dientes de ajo, aceite, sal</li>
+              </ul>
+            </div>
+            <div class="preparacion">
+              <strong>Preparación:</strong>
+              <ol>
+                <li>Cocina la pasta hasta al dente.</li>
+                <li>Sofríe ajo, añade tomate, sal y reduce 8 min.</li>
+                <li>Mezcla con la pasta y sirve con queso.</li>
+              </ol>
+            </div>
+          </div>
+        </article>
+
+        <article class="receta">
+          <img src="imagenes/pasta2.jpg" alt="Penne al pesto">
+          <div class="card-body">
+            <h3>Penne al Pesto</h3>
+            <p class="meta">Tiempo: 15 min</p>
+            <div class="ingredientes">
+              <strong>Ingredientes:</strong>
+              <ul>
+                <li>200 g penne</li>
+                <li>1/2 taza pesto (albahaca, ajo, piñones)</li>
+                <li>Parmesano rallado</li>
+              </ul>
+            </div>
+            <div class="preparacion">
+              <ol>
+                <li>Cocina la pasta y reserva 1/4 taza de agua.</li>
+                <li>Mezcla pesto con la pasta y agua hasta ligar.</li>
+                <li>Sirve con parmesano.</li>
+              </ol>
+            </div>
+          </div>
+        </article>
+        <article class="receta">
+          <img src="imagenes/pasta3.jpg" alt="Fettuccine Alfredo">
+          <div class="card-body">
+            <h3>Fettuccine Alfredo</h3>
+            <p class="meta">Tiempo: 20 min</p>
+            <div class="ingredientes">
+              <ul><li>Fettuccine 200 g</li><li>Mantequilla, crema ligera, queso</li></ul>
+            </div>
+            <div class="preparacion">
+              <ol><li>Hervir pasta.</li><li>Calentar mantequilla con crema y queso.</li><li>Mezclar y servir.</li></ol>
+            </div>
+          </div>
+        </article>
+
+        <article class="receta">
+          <img src="imagenes/pasta4.jpg" alt="Espagueti aglio e olio">
+          <div class="card-body">
+            <h3>Spaghetti Aglio e Olio</h3>
+            <div class="ingredientes"><ul><li>Spaghetti</li><li>Ajo, aceite, chile</li></ul></div>
+            <div class="preparacion"><ol><li>Sofríe ajo y chile en aceite.</li><li>Agrega la pasta y mezcla.</li></ol></div>
+          </div>
+        </article>
+
+        <article class="receta">
+          <img src="imagenes/pasta5.jpg" alt="Mac & Cheese">
+          <div class="card-body">
+            <h3>Mac & Cheese Rápido</h3>
+            <div class="ingredientes"><ul><li>Macarrones</li><li>Leche, queso, mantequilla</li></ul></div>
+            <div class="preparacion"><ol><li>Hervir macarrones.</li><li>Crear salsa de queso y mezclar.</li></ol></div>
+          </div>
+        </article>
+
+        <article class="receta">
+          <img src="imagenes/pasta6.jpg" alt="Pasta con verduras">
+          <div class="card-body">
+            <h3>Pasta con Verduras Salteadas</h3>
+            <div class="ingredientes"><ul><li>Pasta</li><li>Brócoli, zanahoria, calabacín</li></ul></div>
+            <div class="preparacion"><ol><li>Saltea verduras.</li><li>Mezcla con la pasta cocida.</li></ol></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  
+    <footer class="footerr" id="contacto">
+  <div class="informacion-footer">
+      <ul class="social-icon">
+        <li class="icon-element">
+          <a href="https://mail.google.com" target="_blank" class="icon"><ion-icon name="mail-outline"></ion-icon></a>
+        </li>
+        <li class="icon-element">
+          <a href="https://wa.me/7224003534" target="_blank" class="icon"><ion-icon name="logo-whatsapp"></ion-icon></a>
+        </li>
+        <li class="icon-element">
+          <a href="https://www.facebook.com" target="_blank" class="icon"><ion-icon name="logo-facebook"></ion-icon></a>
+        </li>
+        <li class="icon-element">
+          <a href="https://www.instagram.com/rositagutierrez49?igsh=ZnRndjdvYW1uNHNm" target="_blank" class="icon"><ion-icon name="logo-instagram"></ion-icon></a>
+        </li>
+      </ul>
+      <p class="text">Síguenos en nuestras redes sociales</p>
+      <p class="text">© Año 2025 | Todos los derechos reservados</p>
+  </div>
+</footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
