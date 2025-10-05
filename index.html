@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Culinario 2.0</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;700&display=swap" rel="stylesheet" >
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <header>
+        <label class="switch">
+            <input type="checkbox" id="slider" checked>
+            <span class="slider"></span>
+        </label>
+        <div class="container">
+            <div class="logo">
+                <img src="logo-blog-culinario-rem.png" alt="Logo de mi clog culinario" class="logo-principal">
+                <h1>Mi Blog Culinario 2.0 </h1>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#inicio" class="menu">Inicio</a></li>
+                    <li><a href="#recetas" class="menu">Recetas</a></li>
+                    <li><a href="#categorias" class="menu">Categorias</a></li>
+                    <li><a href="#yoo" class="menu">Sobre yo</a></li>
+                    <li><a href="#contacto" class="menu">contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <h1>Descubre el crafteo de cada receta</h1>
+                <br>
+                <p>Recetas tradicionales, tecnicas de siempre, crafteo de toda la vida, sabores inolvidables</p>
+            </div>
+        </section>
+            <section class="recetas-destacadas" id="recetas">
+            <h2>RECETAS DESTACADAS DEL MAINCRA</h2>
+            <div class="recipe-grid">
+            <article class="receta">
+                <h2>Tarta de Calabaza</h2>
+                <h3>Como hacer tarta de Calabaza</h3>
+                <div class="receta-grid">
+                    <div class="ingredientes">
+                        <h4>Ingredientes</h4>
+                        <ul>
+                            <li>2 Tazas de pure de calabaza</li>
+                            <li>1 lata de leche evaporada</li>
+                            <li>2 huevos</li>
+                            <li>1/2 taza de azucar</li>
+                            <li>1 cdita de canela en polvo</li>
+                            <li>1 base de tarta puede ser comprada</li>
+                        </ul>
+                    </div>
+                    <div class="preparacion">
+                        <ol>
+                            <li>Mezcla el pure de calabaza, huevos, leche, azucar y canela</li>
+                            <li>Vierte la mezcla en la base de tarta</li>
+                            <li>Hornea a 180 grados celcius por 40-50 min, hasta que cuaje</li>
+                            <li>Deja enfriar y sirve</li>
+                        </ol>
+                    </div>
+                    <img src="imagenes/tarta.jpg" alt="Tarta de calabaza">
+                </div>
+            </article>
+            <article class="receta">
+                <h2>Pan casero rapido</h2>
+                <h3>Como hacer pan casero rapido</h3>
+                <div class="receta-grid">
+                    <div class="ingredientes">
+                        <h4>Ingredientes</h4>
+                        <ul>
+                            <li>3 tazas de harina</li>
+                            <li> 1 taza de agua tibia</li>
+                            <li>2 cdas de aceite</li>
+                            <li>1 cdita de sal</li>
+                            <li>1 sobre de levadira seca 7g</li>
+                        </ul>
+                    </div>
+                    <div class="preparacion">
+                        <ol>
+                            <li>Disuelve la levadura en el agua tibia</li>
+                            <li>Agrega harina, sal y aceite, mezcla y amasa por 10min</li>
+                            <li>Deja reposar tapado 1 hora</li>
+                            <li>Forma el pan, colocalo en una charola</li>
+                            <li>Hornea a 200 grados celcius por 25-30 min hata que este dorado</li>
+                        </ol>
+                    </div>
+                    <img src="imagenes/pan.jpg" alt="Pan casero rapido">
+                </div>
+            </article>
+            <article class="receta">
+                <h2>Tarta / Pastel</h2> 
+                <h3>Cómo hacer pastel</h3>
+
+                <div class="receta-grid">
+                    <div class="ingredientes">
+                        <h4>Ingredientes:</h4>
+                        <ul>
+                            <li>Mantequilla</li>
+                            <li>Harina</li>
+                            <li>Polvo para hornear</li>
+                            <li>Sal</li>
+                            <li>Azúcar</li>
+                            <li>Huevos enteros</li>
+                            <li>Vainilla</li>
+                        </ul>
+                    </div>
+                    <div class="preparacion">
+                        <h4>Preparación:</h4>
+                        <ol>
+                            <li>Batir huevos y azúcar hasta que la mezcla doble su volumen.</li>
+                            <li>Agregar la harina con el polvo de hornear poco a poco, mezclando suavemente.</li>
+                            <li>Verter la mezcla en un molde engrasado y hornear a 180 °C por 30–35 min.</li>
+                            <li>Mezclar en un recipiente la leche evaporada, condensada y la leche entera.</li>
+                            <li>Pinchar el pastel con un tenedor y verter la mezcla de leches poco a poco.</li>
+                            <li>Refrigerar mínimo 2 horas.</li>
+                            <li>Decorar con crema batida o fruta al gusto.</li>
+                        </ol>
+                    </div>
+                    <img src="imagenes/pastel.jpg" alt="Pastel">
+                </div>
+            </article>
+        </section>
+        <section class="categorias" id="categorias">
+            <h2>CATEGORIAS</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">🥞</div>
+                    <h3>PASTAS</h3>
+                    <a href="pastas.html">Ver receta</a>
+                    <p>15 Recetas</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🥬</div>
+                    <h3>ENSALADAS</h3>
+                    <a href="ensaladas.html">Ver recetas</a>
+                    <p>15 Recetas</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🍨</div>
+                    <h3>POSTRES</h3>
+                    <a href="postres.html">Ver recetas</a>
+                    <p>15 Recetas</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🥒</div>
+                    <h3>VEGETARIANO</h3>
+                    <a href="vegetariano.html">Ver recetas</a>
+                    <p>15 Recetas</p>
+                </div>
+            </div>
+        </section>
+        <aside id="yoo">
+            <h2>Sobre mí </h2>
+            <p>Hola, soy Rosi. Me encanta cocinar y este blog es para conservar las recetas de mi familia ❤.
+                <br>
+                Las comidas son una forma maravillosa de reunir a las personas y crear recuerdos inolvidables.
+                Generalmente las recetas nos las comparte mi abuelia y mi familia las ha disfrutado por generaciones.
+                <br> Espero que disfrutes las recetas tanto como yo disfruto preparándolas.
+                <br> ¡Buen provecho!
+            </p>
+            <img src="imagenes/yop.jpg" alt="Foto cocinando con Rossi">
+        </aside>
+    </main>
+    <footer class="footerr" id="contacto">
+  <div class="informacion-footer">
+      <ul class="social-icon">
+        <li class="icon-element">
+          <a href="https://mail.google.com" target="_blank" class="icon"><ion-icon name="mail-outline"></ion-icon></a>
+        </li>
+        <li class="icon-element">
+          <a href="https://wa.me/7224003534" target="_blank" class="icon"><ion-icon name="logo-whatsapp"></ion-icon></a>
+        </li>
+        <li class="icon-element">
+          <a href="https://www.facebook.com" target="_blank" class="icon"><ion-icon name="logo-facebook"></ion-icon></a>
+        </li>
+        <li class="icon-element">
+          <a href="https://www.instagram.com/rositagutierrez49?igsh=ZnRndjdvYW1uNHNm" target="_blank" class="icon"><ion-icon name="logo-instagram"></ion-icon></a>
+        </li>
+      </ul>
+      <p class="text">Síguenos en nuestras redes sociales</p>
+      <p class="text">© Año 2025 | Todos los derechos reservados</p>
+  </div>
+</footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
